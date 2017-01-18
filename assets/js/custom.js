@@ -38,10 +38,10 @@ $(document).ready(function () {
  Counter Up
  =============================================== */
 jQuery(document).ready(function ($) {
-    /*$('.counter').counterUp({
+    $('.counter').counterUp({
         delay: 10,
         time: 800
-    });*/
+    });
 });
 
 /* ==============================================

@@ -98,7 +98,7 @@
 }
 
 .contact-main {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     font-family: $secondary-font;
     font-weight: bold;
@@ -110,6 +110,18 @@ footer a, .contact-main a {
     color: #fff;
 }
 
+.hero-banner {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    h2 {
+        text-transform: uppercase;
+
+        a {
+            color: $skincolor;
+        }
+    }
+}
 
 
 /************************image hover effect*******************/
