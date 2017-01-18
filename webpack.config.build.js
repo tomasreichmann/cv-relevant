@@ -9,10 +9,10 @@ webpackConfig.plugins.push(
     new CleanWebpackPlugin(['dist'])
 );
 
-// Copy files from assets/img to dist/assets/img
+// Copy files from assets to dist/assets
 webpackConfig.plugins.push(
     new CopyWebpackPlugin([
-        { from: 'assets/img', to: 'assets/img' }
+        { from: 'assets', to: 'assets' }
     ])
 );
 
