@@ -43,6 +43,12 @@
     }
 }
 
+h1, h2, h3, h4, h5, h6 {
+    a {
+        color: $skincolor;
+    }
+}
+
 .scroll-anchor {
     visibility: hidden;
     height: 0;
@@ -66,20 +72,16 @@
     padding: 100px 0;
 }
 
+.section-darker {
+    background-color: $lightgraycolor;
+}
+
 // flexslide fix
 .flex-control-nav {
     z-index: 100;
 }
 .testi-slide {
     box-sizing: content-box;
-}
-
-.testimonials-v-2 {
-    background-color: $lightgraycolor;
-}
-
-.our-team {
-    padding-top: 100px;
 }
 
 .icon-list {
@@ -89,6 +91,7 @@
 
     div {
         text-transform: uppercase;
+        line-height: 1.1em;
     }
 
     li {
@@ -110,19 +113,35 @@ footer a, .contact-main a {
     color: #fff;
 }
 
-.hero-banner {
-    padding-left: 40px;
-    padding-right: 40px;
+.person {
+    text-align: center;
+    line-height: 1.15em;
 
-    h2 {
+    img {
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    &-name {
+        font-weight: bold;
+        color: $darkcolor;
         text-transform: uppercase;
+    }
 
-        a {
-            color: $skincolor;
-        }
+    &-position {
+        display: block;
     }
 }
 
+.section-pomahame .person,
+.section-reference .person {
+    margin-bottom: 20px;
+}
+
+.section-reference .reference {
+    margin-bottom: 50px;
+}
 
 /************************image hover effect*******************/
 
@@ -1523,8 +1542,6 @@ ul.post-desc li + li{
 .fun-fact-wrap{
     background: url(../images/showcase-4.jpg);
     background-repeat: repeat !important;
-    padding-top:100px;
-    padding-bottom: 70px;
 }
 .facts-in{
     text-align: center;
@@ -1548,8 +1565,8 @@ ul.post-desc li + li{
     text-transform: capitalize;
 }
 @media(max-width:992px){
-    .facts-in{
-        margin-bottom: 70px;
+    .facts-in + .facts-in{
+        margin-top: 40px;
     }
 }
 /******owl carousel*******/
@@ -1689,9 +1706,10 @@ ol.breadcrumb li a{
 }
 /**team-v2**/
 .person-v2{
-    margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     background: #fff;
+    margin: 0 auto 40px auto;
+    max-width: 500px;
 }
 .person-desc-v2{
     padding:15px;
@@ -4146,5 +4164,57 @@ body.coming-soon-full{
         background:#f5f5f5;
         margin-left: -15px;
         margin-right: -15px;
+    }
+}
+
+
+.hero-banner.content-section {
+    padding: 50px 40px;
+
+    > div {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-bottom: 10px;
+
+        a {
+            color: $skincolor;
+        }
+    }
+
+    .aspects {
+        font-size: 20px;
+        color: $darkcolor;
+        font-family: $secondary-font;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        i {
+            font-size: 30px;
+            color: $graycolor;
+        }
+    }
+
+    .icon-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex-basis: 50%;
+            padding: 0 5px 10px 5px;
+        }
+    }
+}
+
+.etika .icon-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        flex-basis: 50%;
+        padding: 0 5px 10px 5px;
     }
 }
