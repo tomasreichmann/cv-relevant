@@ -8,4 +8,9 @@ webpackConfig.output = {
     filename: '[name].[hash].js'
 };
 
+webpackConfig.module.loaders.push([
+    // CSS / SASS
+    { test: /\.s?css/, loader: 'style!css?sourceMap!sass?sourceMap' }
+])
+
 module.exports = webpackConfig;

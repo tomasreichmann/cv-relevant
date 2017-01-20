@@ -6,13 +6,7 @@ var dirApp = path.join(__dirname, 'app');
 var dirAssets = path.join(__dirname, 'assets');
 
 module.exports = {
-    entry: {
-        vendor: [
-            'jquery',
-            'lodash'
-        ],
-        bundle: path.join(dirApp, 'index')
-    },
+    entry: path.join(dirApp, 'index'),
     resolve: {
         modulesDirectories: [
             'node_modules'
@@ -67,14 +61,8 @@ module.exports = {
             // Handlebars
             { test: /\.handlebars$/, loader: 'handlebars-loader' },
 
-            // STYLES
-            { test: /\.css$/, loader: 'style!css' },
-
-            // CSS / SASS
-            { test: /\.scss/, loader: 'style!css?sourceMap!sass?sourceMap' },
-
             // Image loader
-            { test: /\.(jpe*g|png|gif)$/, loader: 'file?name=assets/images/[hash].[ext]' }
+            { test: /\.(jpe?g|png|gif)$/, loader: 'file?name=assets/images/[hash].[ext]' }
         ]
     },
     sassLoader: {
