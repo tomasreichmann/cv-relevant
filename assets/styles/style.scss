@@ -9,6 +9,10 @@
 @import "_header.scss";
 @import "_footers.scss";
 
+html body {
+    display: block;
+}
+
 .wide-img-showcase-row{
     position: relative;
 }
@@ -43,6 +47,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.h--link a {
+    display: inline-block;
+
+    &:first-letter {
+        border-bottom-color: currentColor;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+    }
+
+}
+
 .scroll-anchor {
     visibility: hidden;
     height: 0;
@@ -59,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
     img {
         margin: 20px;
+        filter: grayscale(100%);
     }
 }
 
@@ -1315,7 +1331,7 @@ ul.post-desc li + li{
     overflow: hidden;
 }
 .testi-slide{
-    text-align: center;
+    text-align: left;
     position: relative;
     padding-bottom: 20px;
     .flex-control-nav {
@@ -1362,6 +1378,14 @@ ul.post-desc li + li{
 .testi-slide .flex-control-paging li a.flex-active{
     background: transparent !important;
     border: 2px solid $skincolor;
+}
+.testi-slide cite {
+    font-size: 1.2em;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: bold;
+    color: $skincolor;
+    text-transform: uppercase;
 }
 
 .quote{
@@ -1546,9 +1570,12 @@ ul.post-desc li + li{
     font-weight: 400;
     text-transform: capitalize;
 }
-@media(max-width:992px){
+.facts-in + .facts-in{
+    margin-top: 40px;
+}
+@media(min-width:768px){
     .facts-in + .facts-in{
-        margin-top: 40px;
+        margin-top: 0;
     }
 }
 /******owl carousel*******/
@@ -4149,10 +4176,24 @@ body.coming-soon-full{
     }
 }
 
-.hero-banner.content-section {
-    padding: 50px 40px;
+.hero-banner {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
 
-    > div {
+    &-bg {
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0.5;
+        filter: blur(4px);
+    }
+
+    &-content {
+        position: relative;
+        z-index: 1;
         margin-bottom: 20px;
     }
 
@@ -4173,7 +4214,17 @@ body.coming-soon-full{
         font-weight: bold;
         text-transform: uppercase;
 
+        li {
+            position: relative;
+            padding-left: 2em;
+            padding: 5px 0 5px 35px;
+        }
+
+
         i {
+            position: absolute;
+            left: 0;
+            top: 0;
             font-size: 30px;
             color: $graycolor;
         }
@@ -4187,6 +4238,15 @@ body.coming-soon-full{
             flex-basis: 50%;
             padding: 0 5px 10px 5px;
         }
+    }
+}
+
+@media(min-width:768px){
+    .hero-banner-bg{
+        top: 50%;
+        height: auto;
+        width: 100%;
+        transform: translateY(-50%);
     }
 }
 
