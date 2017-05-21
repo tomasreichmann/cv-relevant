@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="cs">
+{{#[helpers/headerData]}}
+<html lang="{{lang}}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="copyright" content="CV Relevant je konzultační a personální společnost, která se zaměřuje především na služby Executive Search, Recruitment a IT Contracting." >
-    <meta name="description" content="CV Relevant je konzultační a personální společnost, která se zaměřuje především na služby Executive Search, Recruitment a IT Contracting. Konzultanti CV Relevant vyhledávají vhodné kandidáty prostřednictvím osobních kontaktů, doporučení a s použitím databáze. Předností našich konzultantů je jejich dlouhodobá praxe v manažerských pozicích, jejichž samozřejmou součástí byla personální práce." >
+    <meta name="copyright" content="{{copyright}}" >
+    <meta name="description" content="{{description}}" >
     <style>
       body {
         display: none;
       }
     </style>
-    <title>CV Relevant znamená personální řešení</title>
+    <title>{{title}}</title>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,43 +22,31 @@
     <![endif]-->
   </head>
   <body>
-
     <!--navigation -->
     <!-- Static navbar -->
     <nav id="navigation" class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Přepnout navigaci</span>
+            <span class="sr-only">{{switchLabel}}</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/index.html"><img src="assets/images/logo.gif" alt="cv relevant"></a>
+          <a class="navbar-brand" href="{{home.url}}" {{#home.active}}class="active"{{/home.active}}><img src="/assets/images/logo.gif" alt="{{home.title}}"></a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right navbar-language">
-            <li>
-              <a href="/en/index.html" >English</a>
-            </li>
-          </ul>
+          <!--ul class="nav navbar-nav navbar-right navbar-language">
+            {{#otherLanguages}}
+            <li><a href="{{url}}" >{{title}}</a></li>
+            {{/otherLanguages}}
+          </ul-->
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="/contracting/index.html" >Contracting</a>
-            </li>
-            <li>
-              <a href="/headhunting/index.html" >Headhunting</a>
-            </li>
-            <li>
-              <a href="/obsazene-pozice/index.html" >Obsazené pozice</a>
-            </li>
-            <li>
-              <a href="/reference/index.html" >Reference</a>
-            </li>
-            <li>
-              <a href="#kontakt" >Kontakt</a>
-            </li>
+            {{#items}}
+            <li {{#active}}class="active"{{/active}}><a href="{{url}}" >{{title}}</a></li>
+            {{/items}}
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--container-->
     </nav><!--navbar-default-->
+{{/[helpers/headerData]}}

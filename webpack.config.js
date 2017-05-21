@@ -31,6 +31,26 @@ const pages = [
   {
     template: 'templates/en/index.handlebars',
     filename: 'en/index.html'
+  },
+  {
+    template: 'templates/en/index.handlebars',
+    filename: 'en/index.html'
+  },
+  {
+    template: 'templates/en/contracting/index.handlebars',
+    filename: 'en/contracting/index.html'
+  },
+  {
+    template: 'templates/en/headhunting/index.handlebars',
+    filename: 'en/headhunting/index.html'
+  },
+  {
+    template: 'templates/en/filled-positions/index.handlebars',
+    filename: 'en/filled-positions/index.html'
+  },
+  {
+    template: 'templates/en/references/index.handlebars',
+    filename: 'en/references/index.html'
   }
 ];
 
@@ -71,11 +91,21 @@ module.exports = {
       { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
 
       // Handlebars
-      { test: /\.handlebars$/, loader: 'handlebars-loader' },
+      {
+        test: /\.handlebars$/,
+        loader: 'handlebars-loader',
+        query: {
+          knownHelpersOnly: false,
+          helperDirs: ['templates/helpers']
+        }
+      },
 
       // Image loader
       { test: /\.(jpe?g|png|gif)$/, loader: 'file?name=assets/images/[hash].[ext]' }
     ]
+  },
+  handlebarsLoader: {
+    knownHelpersOnly: false
   },
   sassLoader: {
     includePaths: [dirAssets]

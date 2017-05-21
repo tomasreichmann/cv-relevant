@@ -967,6 +967,22 @@ ul.post-desc li + li{
     border-bottom: 1px dashed #e5e5e5;
     padding-bottom: 30px;
     margin-bottom: 60px;
+
+    h1 {
+        margin-top: 20px;
+    }
+}
+.blog-post-title-image {
+    position: relative;
+    padding-top: 30%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 .post-detail{
     margin-top: 25px;

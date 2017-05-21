@@ -51,9 +51,10 @@ $(document).ready(function () {
 
     $('.testi-slide').flexslider({
         slideshowSpeed: 5000,
+        slideshow: false,
         directionNav: false,
         animation: "fade",
-        smoothHeight:true
+        smoothHeight: false
     });
 });
 
