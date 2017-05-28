@@ -27,6 +27,11 @@ const pages = [
     filename: 'reference/index.html'
   },
 
+  {
+    template: 'templates/zasady-a-etika/index.handlebars',
+    filename: 'zasady-a-etika/index.html'
+  },
+
   // English
   {
     template: 'templates/en/index.handlebars',

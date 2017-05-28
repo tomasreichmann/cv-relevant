@@ -4257,12 +4257,25 @@ body.coming-soon-full{
     }
 }
 
+.nav > li > a {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 @media(min-width:768px){
     .hero-banner-bg{
         top: 50%;
         height: auto;
         width: 100%;
         transform: translateY(-50%);
+    }
+
+    .navbar > .container .navbar-brand {
+        margin-left: -11px;
+    }
+
+    .container > .navbar-collapse {
+        margin-left: 226px;
     }
 }
 
@@ -4273,5 +4286,59 @@ body.coming-soon-full{
     li {
         flex-basis: 50%;
         padding: 0 5px 10px 5px;
+    }
+}
+
+section.services {
+    padding-bottom: 100px;
+
+    .colored-boxed {
+        padding-top: 100px;
+    }
+}
+
+.services-icon {
+    color: #aaa;
+
+    img {
+        display: block;
+        height: 90px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        fill: currentColor;
+    }
+}
+
+.person-v2 img {
+    width: 100%;
+}
+
+.person-bio-content {
+    display: none;
+}
+
+.text-columns {
+    li {
+        margin-bottom: 20px;
+        break-inside: avoid-column;
+    }
+}
+
+@media (min-width:768px) {
+    .text-columns {
+        column-count: 2;
+        column-gap: 40px;
+    }
+}
+
+@media (min-width:1024px) {
+    .text-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width:1200px) {
+    .text-columns {
+        column-count: 4;
     }
 }

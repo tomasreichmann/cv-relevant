@@ -32,6 +32,26 @@ const navigation = {
                 url: '/reference/index.html'
             },*/
             {
+                id: 'executive-search',
+                title: 'Executive Search',
+                url: '/#executive-search'
+            },
+            {
+                id: 'recruitment',
+                title: 'Recruitment',
+                url: '/#recruitment'
+            },
+            {
+                id: 'personalni-poradenstvi',
+                title: 'Poradenství',
+                url: '/#personalni-poradenstvi'
+            },
+            {
+                id: 'it-contracting',
+                title: 'IT Contracting',
+                url: '/#it-contracting'
+            },
+            {
                 id: 'nasi-klienti',
                 title: 'Naši Klienti',
                 url: '/#nasi-klienti'
@@ -49,7 +69,7 @@ const navigation = {
             {
                 id: 'zasady-a-etika',
                 title: 'Zásady a etika',
-                url: '/#zasady-a-etika'
+                url: '/zasady-a-etika/index.html'
             },
             {
                 id: 'kontakt',
