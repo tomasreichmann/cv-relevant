@@ -75,6 +75,11 @@ h1, h2, h3, h4, h5, h6 {
     img {
         margin: 20px;
         filter: grayscale(100%);
+        transition: filter 0.5s;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
     }
 }
 
@@ -1361,7 +1366,6 @@ ul.post-desc li + li{
 }
 .testi-slide img{
     width:92px;
-    height: 92px;
     @include border-radius (50%);
 }
 .testi-slide p{
