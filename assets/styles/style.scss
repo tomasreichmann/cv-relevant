@@ -17,14 +17,14 @@ html body {
     position: relative;
 }
 .no-padding.img{
-    background:url(../images/showcase-1.jpg) scroll center no-repeat;
+    background:  none scroll center no-repeat;
     background-size:  cover;
     position: absolute;
     height: 100%;
 
 }
 .no-padding.img-2{
-    background:url(../images/showcase-2.jpg) scroll center no-repeat;
+    background: none scroll center no-repeat;
     background-size:  cover;
     position: absolute;
     height: 100%;
@@ -269,18 +269,18 @@ Carousel slider
 
 }
 #carousel-slide-1{
-    background-image:url(../images/bg-1.jpg);
+    background-image: none;
     width:100%;
     background-size: cover;
 }
 #carousel-slide-2{
-    background-image:url(../images/bg-2.jpg);
+    background-image: none;
     width:100%;
     background-size: cover;
 
 }
 #carousel-slide-3{
-    background-image:url(../images/bg-3.jpg);
+    background-image: none;
     width:100%;
     background-size: cover;
 }
@@ -501,7 +501,7 @@ a.carousel-control {
 }
 /*******************home parallax-bg----***********************/
 #home-parallax{
-    background: url('../images/showcase-4.jpg') no-repeat;
+    background: none no-repeat;
     padding: 190px 0;
 }
 .typed-cursor{
@@ -1305,7 +1305,7 @@ ul.post-desc li + li{
 }
 /*testimonials parallax*/
 .testimonials{
-    background:url(../images/bg-4.jpg) no-repeat;
+    background:none no-repeat;
     padding: 80px 0;
 }
 .testimonials .center-heading h2{
@@ -1566,7 +1566,7 @@ ul.post-desc li + li{
 
 /****fun facts*****/
 .fun-fact-wrap{
-    background: url(../images/showcase-4.jpg);
+    background: none;
     background-repeat: repeat !important;
 }
 .facts-in{
@@ -1613,7 +1613,7 @@ ul.post-desc li + li{
 
 /**********static background with transparent header*/
 .static-bg{
-    background: url(../images/showcase-3.jpg);
+    background: none;
     padding-top:230px;
     padding-bottom: 200px;
 }
@@ -1664,7 +1664,7 @@ ul.post-desc li + li{
     padding: 60px 0;
     background-position: center center;
     background-repeat: no-repeat;
-    background:url(../images/showcase-1.jpg) no-repeat center center;
+    background: none no-repeat center center;
 }
 .breadcrumb-wrap h4{
     margin: 0px;
@@ -1907,7 +1907,7 @@ ol.breadcrumb li a{
 }
 /***************about me*********************/
 .me-intro{
-    background: url(../images/bg-4.jpg);
+    background: none;
     padding: 200px 0;
 }
 .me-intro h2{
@@ -2499,7 +2499,7 @@ label span{
     z-index: 1;
 }
 .fallback-image{
-    background-image: url(../images/showcase-5.jpg);
+    background-image: none;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -3524,7 +3524,7 @@ body.invoice{
 
 
 .constro-cta{
-    background: url(../images/construction/constro-bg-2.jpg);
+    //background: url(../images/construction/constro-bg-2.jpg);
     padding: 80px 0;
     text-align: center;
 }
@@ -3931,7 +3931,7 @@ UNDER CUNSTRUCTION PAGES v1.9
 
 ***********************/
 .coming-soon{
-    background:url(../images/bg-3.jpg);
+    //background:url(../images/bg-3.jpg);
     padding: 100px 0;
     position:relative;
     background-repeat: no-repeat;
@@ -4030,7 +4030,7 @@ body.coming-soon-full{
 }
 .coming-soon-fullscreen{
     width: 100%;
-    background:url(../images/bg-4.jpg);
+    //background:url(../images/bg-4.jpg);
     background-attachment: fixed;
     background-position: 0 0;
     background-size: cover;
