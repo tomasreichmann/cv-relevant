@@ -105,6 +105,12 @@ module.exports = {
         }
       },
 
+      // Favicon loader
+      {
+          test: /\.ico$/,
+          loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
+      },
+
       // Image loader
       { test: /\.(jpe?g|png|gif)$/, loader: 'file?name=assets/images/[hash].[ext]' }
     ]
