@@ -56,5 +56,9 @@ $(document).ready(function () {
         animation: "fade",
         smoothHeight: false
     });
+
+    $('.navbar-nav').on('click', 'a', function(){
+        $('.navbar-collapse').toggleClass('in');
+    } );
 });
 
