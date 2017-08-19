@@ -44,11 +44,11 @@ jQuery(document).ready(function ($) {
     });
 });
 
-/* ==============================================
- flex slider
- =============================================== */
 $(document).ready(function () {
-
+    
+    /* ==============================================
+     flex slider
+     =============================================== */
     $('.testi-slide').flexslider({
         slideshowSpeed: 5000,
         slideshow: false,
