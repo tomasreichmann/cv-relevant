@@ -62,3 +62,34 @@ $(document).ready(function () {
     } );
 });
 
+function customModalClose(){
+    var customModal = $(this).closest('.customModal');
+    customModal.fadeOut(500, function(){
+        customModal.remove();
+    });
+}
+
+$( function(){
+    $('.person-bio').on('click', function(e){
+        e.preventDefault();
+        var title = $(this).closest('.h--link').text();
+        var content = $(this).closest('div').find('.person-bio-content').text();
+
+        var modal = $('<div class="customModal" ></div>');
+
+        var modalOverlay = $('<div class="customModal-overlay"></div>');
+        modalOverlay.on('click', customModalClose);
+        modal.append(modalOverlay);
+        
+        var modalContent = $('<div class="customModal-content" ></div>');
+        modalContent.append( '<h2>' + title + '</h2>' );
+        modalContent.append( '<p>' + content + '</p>' );
+        modal.append(modalContent);
+        
+        var modalClose = $('<button class="customModal-close">×</button>');
+        modalClose.on('click', customModalClose);
+        modalContent.append(modalClose);
+
+        $(document.body).append(modal);
+    } )
+} );
